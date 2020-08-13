@@ -128,7 +128,7 @@ public class StringsLec {
         System.out.println("The length of 'myString' is: " + stringLength);
 
         //String replace(String pattern, String replacement)
-        String replacedString = myString.replace('a','@');
+        String replacedString = myString.replace('a', '@');
         System.out.println("Replaced string result is: " + replacedString);
 
         // change the first 'a' to an '@'
@@ -140,10 +140,10 @@ public class StringsLec {
         int firstA = myString.indexOf('a'); // 1
 
         // use the substring method to pull out 'everything before a' + 'everything after a'
-        String beforeAye = myString.substring(0,firstA);
+        String beforeAye = myString.substring(0, firstA);
 
         //  then add those two strings with an '@' in the middle
-        String afterAye = myString.substring((firstA + 1),stringLength);
+        String afterAye = myString.substring((firstA + 1), stringLength);
 
         String awesomeness = beforeAye + "@" + afterAye;
         System.out.println("Awesomeness is: " + awesomeness);
@@ -166,7 +166,7 @@ public class StringsLec {
         // ['c', 'a', 's', 'e', 'y'] -> Arrays.toString(['c', 'a', 's', 'e', 'y']) // Char Array -> no built-in toString()
 
         // Get the third and fifteenth word in the string
-        int histLength =betterHistory.length();
+        int histLength = betterHistory.length();
         String[] historyStringArray = new String[histLength];
         historyStringArray = betterHistory.split(" ");
 
@@ -176,3 +176,4 @@ public class StringsLec {
         System.out.println("The fifteenth word in betterHistory is: " + historyStringArray[14]);
     }
 
+}
